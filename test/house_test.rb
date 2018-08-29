@@ -133,6 +133,4 @@ class HouseTest < MiniTest::Test
                 }
     assert_equal expected, house.rooms_by_category
   end
-
-
 end

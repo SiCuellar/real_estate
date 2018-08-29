@@ -45,10 +45,9 @@ class House
   end
 
   def rooms_by_category
-    category = {}
     rooms = @rooms
-    rooms
-  end 
-
-
+    rooms.group_by do |room|
+      room.category
+    end
+  end
 end
